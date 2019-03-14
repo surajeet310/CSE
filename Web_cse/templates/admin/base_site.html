@@ -1,0 +1,9 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ Web_cse_title|default:_('CSE Adminstrator Panel') }}{% endblock %}
+
+{% block branding %}
+<h1 id="Web_cse"><a href="{% url 'admin:index' %}">{{ Web_cse_header|default:_('CSE Adminstrator Panel') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

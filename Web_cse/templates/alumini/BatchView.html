@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+    {% block content %}
+        <div class="mainbody">
+            <h4>Search Alumini By Batch</h4>
+            <p>Select Batch</p>
+            <form action="{% url 'alumini:BatchView' %}" method="post" name="batch_search_alumni">
+              {% csrf_token %}
+            <select class="search" name="batch_search">
+                {% for b in studentBatch %}
+                <option value="{{ b.batch_id }}">{{ b.batch }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="OK">
+            </form>
+        </div>
+    {% endblock %}

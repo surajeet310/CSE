@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+   {% block content %}
+
+
+       <div class="tabular_data" id="tabular_data">
+                          <table>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Roll</th>
+                                <th>Number</th>
+                                <th>Pass Out Year</th>
+                                <th>CGPA</th>
+                            </tr>
+                              {% for x in queryResults %}
+                                  <tr>
+                                    <td>{{ x.First_name }}</td>
+                                    <td>{{ x.Last_name }}</td>
+                                    <td>{{ x.roll }}</td>
+                                    <td>{{ x.number }}</td>
+                                    <td>{{ x.pass_out_year }}</td>
+                                    <td>{{ x.cgpa }}</td>
+                                  </tr>
+                              {% endfor %}
+
+                          </table>
+                      </div>
+   {% endblock %}

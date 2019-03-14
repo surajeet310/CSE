@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="base.css">
+
+    <script src="base.js" type="text/javascript"></script>
+    <link href="font_Lib.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="wrapper">
+        <div class="body-container">
+              <!--side-menu starts-->
+              <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Dean's Desk</a>
+                    <a href="#">Faculty</a>
+                    <a href="#">Courses</a>
+                    <a href="alumini_search.html">Search Alumini</a>
+                    <a href="#">View Alumini by Batch</a>
+             </div>
+
+              <!--side-menu ends-->
+
+              <div id="main">
+                <!--header section starts-->
+
+                  <div class="head">
+                     <div class="aus_logo">
+                        <img src="logo.png">
+                     </div>
+                     <h1><span onclick="openNav()"><i class="fas fa-align-justify" id="terminal"></i></span> Department Of Computer Science And Engineering</h1>
+                  </div>
+                  <hr>
+                <!--header section ends-->
+                <!--photo slide show starts-->
+                <!-- Slideshow container -->
+                <div class="main_slide_cont">
+                    <div class="slideshow-container" id="slideshow-container">
+
+                        <div class="mySlides fade" id="mySlides">
+                            <img src="1.png">
+                        </div>
+
+                        <div class="mySlides fade" id="mySlides">
+                            <img src="2.png">
+                        </div>
+
+                        <div class="mySlides fade" id="mySlides">
+                            <img src="3.png">
+                        </div>
+
+                    </div>
+              </div>
+                    <br>
+                    <div class="dotDiv">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <br>
+                <!--photo slide show ends-->
+                <div class="event_notice">
+                <!--notice section starts-->
+                  <div class="notice">
+                        <div class="noticeBoard">
+                          <div class="notice_header">
+                            <p>Notice Board</p>
+                          </div>
+                            <div class="filter-section">
+                                Filtering Options :
+                                <select class="">
+                                    <option value="">Select</option>
+                                    <option value="">1st year</option>
+                                    <option value="">2nd year</option>
+                                    <option value="">3rd year</option>
+                                    <option value="">4th year</option>
+                                </select>
+                                <button type="button" name="applyFilter" class="applyButton">Apply Filter</button>
+                            </div>
+                            <div class="notice_content">
+                              <ul>
+                                <li>Notice 1</li>
+                                <li>Notice 2</li>
+                                <li>Notice 3</li>
+                                <li>Notice 4</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                        <!--notice section ends-->
+                        <hr>
+                          <!--about section starts-->
+                        <div class="about">
+                          <div class="about_head">
+                            <p>About Us</p>
+                          </div>
+                            <div class="content_about">
+                                  The Department of Computer Science and Engineering (formerly Department of Information Technology) is one of the three departments at Triguna Sen School of Technology established in the year 2006. It offers bachelor’s programs along with master’s and doctoral degree programs in Computer Science and Engineering. It provides a comprehensive program that emphasizes on algorithms and theory, advanced computer architecture , computer vision and pattern recognition, data mining and machine learning, information retreival & NLP, operating systems and computer networks, computer security, and scientific computing. The CSE department’s many strengths include its high faculty-to-student ratio, state of the art facilities, strong focus on undergraduate education and emphasis on leadership, service, and ethics. Faculty and students often collaborate on projects, working side-by-side with researchers from other colleges and departments across the campus, such as ISI,Kolkata, IIT Guwahati and NIT SIlchar to name a few. In addition , quality research opportunities available through the department,as there is a real sense of community and teamwork here.
+                            </div>
+                        </div>
+                          <!--about section ends-->
+                        <hr>
+
+                        <!--event calender starts-->
+                        <div class="event">
+                            <div class="event_calender">
+                               <div class="event_head">
+                                  <p>Event Calender</p>
+                                </div>
+                                <div class="event_content">
+                                    <ul>
+                                      <li>kvbkvbkv</li>
+                                      <li>jvbkjrbvj</li>
+                                      <li>jbvrkjvb</li>
+                                    </ul>
+                                </div>
+                            </div>
+                      </div>
+
+                        <!--event calender ends-->
+
+              </div>
+
+                <br>
+                <!--footer starts-->
+                  <div class="footer">
+                      <h2>Connect with us on</h2>
+                      <div class="google">
+                          <i class="fab fa-google"></i>
+                      </div>
+                      <hr>
+                      <div class="facebook">
+                          <i class="fab fa-facebook"></i>
+                      </div>
+                      <hr>
+                      <h3>Contact Us</h3>
+                      <hr style="width:10%">
+                  </div>
+                <!--footer ends-->
+              </div>
+        </div>
+  </div>
+  <script src="home.js" type="text/javascript"></script>
+  </body>
+</html>

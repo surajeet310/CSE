@@ -1,0 +1,42 @@
+.mainbody{
+  border: 1px solid #D7DBDD;
+  box-shadow: 5px 5px 5px #D7DBDD;
+  max-width: 1300px;
+  width: 100%;
+  text-align: center;
+}
+
+.select_for_search{
+  width: 100%;
+}
+
+.search_form_name{
+  width: 100%;
+  background-color: #D7DBDD;
+  padding: 1%;
+}
+
+.search_form_Roll{
+  width: 100%;
+  background-color: #D7DBDD;
+  padding: 1%;
+}
+.tabular_data{
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+table{
+  text-align: center;
+  border: 1px solid  #dddddd;
+  border-collapse: collapse;
+}
+
+td,tr,th{
+  border: 1px solid  #dddddd;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

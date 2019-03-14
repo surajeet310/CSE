@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+      {% block content %}
+
+          <!--photo slide show starts-->
+                <!-- Slideshow container -->
+                <div class="main_slide_cont">
+                    <div class="slideshow-container" id="slideshow-container">
+                        {% for p in slide %}
+                        <div class="mySlides fade" id="mySlides">
+                            <img src="{{ p.slidePic.url }}">
+                        </div>
+                        {% endfor %}
+                    </div>
+              </div>
+                    <br>
+                    <div class="dotDiv">
+                        {% for d in slide %}
+                            <span class="dot"></span>
+                        {% endfor %}
+                    </div>
+                    <br>
+                <!--photo slide show ends-->
+          <div class="event_notice">
+                <!--notice section starts-->
+             <div class="notice">
+                <div class="noticeBoard">
+                  <div class="notice_header">
+                    <p>Notice Board</p>
+                  </div>
+                    <div class="filter-section">
+                        <form action="{% url 'notice:filter_query' %}" method="post" id="filterNoticeForm">
+                          {% csrf_token %}
+                            Filtering Options :
+                            <select name="sem">
+                                {% for s in semester %}
+                                    <option value="{{ s.sem_id }}">{{ s.sem }}</option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit" name="applyFilter" class="applyButton">Apply Filter</button>
+                        </form>
+                    </div>
+                    <div class="notice_content">
+                      <ul>
+                        {% for n in notice %}
+                            <li><a href="{% url 'notice:output_notice' n.notice_id %}" name="{{ n.notice_id }}">{{ n.notice_content }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                </div>
+             </div>
+                <!--notice section ends-->
+                <hr>
+                          <!--about section starts-->
+                        <div class="about">
+                          <div class="about_head">
+                            <p>About Us</p>
+                          </div>
+                            <div class="content_about">
+                                  The Department of Computer Science and Engineering (formerly Department of Information Technology) is one of the three departments at Triguna Sen School of Technology established in the year 2006. It offers bachelor’s programs along with master’s and doctoral degree programs in Computer Science and Engineering. It provides a comprehensive program that emphasizes on algorithms and theory, advanced computer architecture , computer vision and pattern recognition, data mining and machine learning, information retreival & NLP, operating systems and computer networks, computer security, and scientific computing. The CSE department’s many strengths include its high faculty-to-student ratio, state of the art facilities, strong focus on undergraduate education and emphasis on leadership, service, and ethics. Faculty and students often collaborate on projects, working side-by-side with researchers from other colleges and departments across the campus, such as ISI,Kolkata, IIT Guwahati and NIT SIlchar to name a few. In addition , quality research opportunities available through the department,as there is a real sense of community and teamwork here.
+                            </div>
+                        </div>
+                          <!--about section ends-->
+                 <hr>
+
+                <!--event calender starts-->
+                        <div class="event">
+                            <div class="event_calender">
+                               <div class="event_head">
+                                  <p>Event Calender</p>
+                                </div>
+                                <div class="event_content">
+                                    {% for e in event %}
+                                    <ul>
+                                    <div class="event_dynamic">
+                                        <img src="{{ e.event_img.url }}">
+                                        <a href="#">{{ e.event_header }}</a>
+                                        <p>{{ e.event_date }}</p>
+                                        <div class="event_details">
+
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    </ul>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                      </div>
+
+                        <!--event calender ends-->
+          </div>
+
+        {% endblock %}

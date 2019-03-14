@@ -1,0 +1,169 @@
+
+* {box-sizing: border-box;}
+
+.event_notice{
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+}
+
+.notice{
+  width: 30%;
+}
+
+.noticeBoard{
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  background-color: #D7DBDD;
+}
+
+.notice_header{
+  width: 100%;
+  padding: 1%;
+}
+
+.notice_content{
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  background-color: white;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+
+.filter-section{
+  padding:1%;
+}
+
+.applyButton{
+  float: right;
+  padding: 0.5%;
+}
+
+.event{
+  width: 30%;
+}
+
+.event_head{
+  width: 100%;
+  padding: 1%;
+}
+
+.event_calender{
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  background-color: #D7DBDD;
+}
+
+.event_content{
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  background-color: white;
+  word-wrap: break-word;
+
+}
+
+.about{
+  max-width: 500px;
+  width: 40%;
+}
+
+.about_head{
+  width: 100%;
+  text-align: center;
+  background-color: #D7DBDD;
+  padding: 1%;
+}
+
+.content_about{
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  background-color: white;
+  word-wrap: break-word;
+}
+
+.main_slide_cont{
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  max-height: 400px;
+}
+
+.slideshow-container{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 400px;
+}
+ .mySlides img{
+   width: 70%;
+   height: 400px;
+   max-height: 400px;
+   object-fit: fill;
+ }
+
+ .mySlides{
+   display: none;
+   text-align: center;
+   height: 400px;
+   max-height: 400px;
+ }
+
+.dotDiv{
+  margin: 0 auto;
+  text-align: center;
+}
+
+ .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.event_content img{
+    width: 50px;
+    height: 50px;
+}
+
+.event_content a{
+    padding-top: 5%;
+}
+
+.event_dynamic{
+    display: flex;
+}
+
