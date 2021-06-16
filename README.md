@@ -1,2 +1,2 @@
-# CSE
-website
+# Website
+Using Django
